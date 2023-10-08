@@ -118,7 +118,7 @@ pipeline
 
 
 
-                                sh  "docker run --rm  --name compose_sys "+
+                             /*  sh  "docker run --rm  --name compose_sys "+
                                         "-v ${volume}:/app "+
                                         "-v /var/run/docker.sock:/var/run/docker.sock "+
                                         "-v /usr/bin/docker:/usr/bin/docker "+
@@ -126,7 +126,7 @@ pipeline
                                         "-v /usr/libexec/docker/cli-plugins/docker-compose:"+
                                         "/usr/libexec/docker/cli-plugins/docker-compose "+
                                         "-w /app/${proFolder}  ubuntu:latest "+
-                                        "docker compose up -d "
+                                        "docker compose up -d "  */
 
 
 
@@ -141,7 +141,7 @@ pipeline
 
 
 
-                                sh  "docker run --rm  --name test3 "+
+                             /*   sh  "docker run --rm  --name test3 "+
                                         "-v ${volume}:/app "+
                                         "-v /var/run/docker.sock:/var/run/docker.sock "+
                                         "-v /usr/bin/docker:/usr/bin/docker "+
@@ -151,7 +151,7 @@ pipeline
                                         "-w /app/${proFolder}  ubuntu:latest "+
                                         "docker compose down "
 
-
+                                    */
 
                             }
                         }
