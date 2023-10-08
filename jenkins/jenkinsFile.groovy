@@ -116,7 +116,7 @@ pipeline
                         {
                             steps {
 
-                                sh "echo "testing;
+                                sh echo "testing";
 
                              /*  sh  "docker run --rm  --name compose_sys "+
                                         "-v ${volume}:/app "+
@@ -139,7 +139,7 @@ pipeline
                         {
                             steps {
 
-                                sh "echo "testing;
+                                sh echo "testing";
 
                              /*   sh  "docker run --rm  --name test3 "+
                                         "-v ${volume}:/app "+
